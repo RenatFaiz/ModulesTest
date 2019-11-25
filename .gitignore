@@ -1,0 +1,22 @@
+/out/
+/target/
+/backup/
+!.mvn/wrapper/maven-wrapper.jar
+.txt
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+requests.sql
