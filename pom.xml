@@ -18,6 +18,9 @@
         <javax.servlet.jsp-api.version>2.3.3</javax.servlet.jsp-api.version>
         <lib.version>1.0</lib.version>
         <app.version>1.0</app.version>
+        <tomcat-dbcp.version>9.0.27</tomcat-dbcp.version>
+        <webapp-runner.version>9.0.27.1</webapp-runner.version>
+        <sqlite-jdbc.version>3.28.0</sqlite-jdbc.version>
     </properties>
 
     <dependencyManagement>
@@ -33,6 +36,21 @@
                 <artifactId>javax.servlet.jsp-api</artifactId>
                 <version>${javax.servlet.jsp-api.version}</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.github.jsimone</groupId>
+                <artifactId>webapp-runner</artifactId>
+                <version>${webapp-runner.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>tomcat-dbcp</artifactId>
+                <version>${tomcat-dbcp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.xerial</groupId>
+                <artifactId>sqlite-jdbc</artifactId>
+                <version>${sqlite-jdbc.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.javafaker</groupId>
