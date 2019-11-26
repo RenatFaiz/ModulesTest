@@ -14,12 +14,26 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <javafaker.version>1.0.1</javafaker.version>
+        <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
+        <javax.servlet.jsp-api.version>2.3.3</javax.servlet.jsp-api.version>
         <lib.version>1.0</lib.version>
         <app.version>1.0</app.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${javax.servlet-api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet.jsp</groupId>
+                <artifactId>javax.servlet.jsp-api</artifactId>
+                <version>${javax.servlet.jsp-api.version}</version>
+                <scope>provided</scope>
+            </dependency>
             <dependency>
                 <groupId>com.github.javafaker</groupId>
                 <artifactId>javafaker</artifactId>
@@ -30,20 +44,25 @@
                 <artifactId>lib</artifactId>
                 <version>${lib.version}</version>
             </dependency>
+<!--            <dependency>-->
+<!--                <groupId>ru.itpark</groupId>-->
+<!--                <artifactId>app</artifactId>-->
+<!--                <version>${app.version}</version>-->
+<!--            </dependency>-->
         </dependencies>
     </dependencyManagement>
 
     <distributionManagement>
         <repository>
             <id>github</id>
-            <url>https://maven.pkg.com/RenatFaiz/ModulesTest</url>
+            <url>https://maven.pkg.github.com/RenatFaiz/ModulesTest</url>
         </repository>
     </distributionManagement>
 
     <repositories>
         <repository>
             <id>github</id>
-            <url>https://maven.pkg.com/RenatFaiz/ModulesTest</url>
+            <url>https://maven.pkg.github.com/RenatFaiz/ModulesTest</url>
         </repository>
     </repositories>
 
