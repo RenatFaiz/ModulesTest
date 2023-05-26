@@ -20,7 +20,7 @@
         <app.version>1.0</app.version>
         <tomcat-dbcp.version>9.0.27</tomcat-dbcp.version>
         <webapp-runner.version>9.0.27.1</webapp-runner.version>
-        <sqlite-jdbc.version>3.28.0</sqlite-jdbc.version>
+        <sqlite-jdbc.version>3.41.2.2</sqlite-jdbc.version>
     </properties>
 
     <dependencyManagement>
